@@ -5,6 +5,9 @@
 
 </script>
 
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css?family=poppins">
+
 <div id="page" style="background-color: {colors.background}"> 
 	<div id="main">
 		<Main></Main>
@@ -13,6 +16,10 @@
 </div>
 
 <style lang="scss">
+
+:global(*) {
+	font-family: 'poppins';
+}
 
 #page {
 	min-width: 100vw;
