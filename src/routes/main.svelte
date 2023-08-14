@@ -33,8 +33,10 @@
 		<div id="searchbar" style="grid-area: search;">
 			<div id="whitebar" style="background-color: {colors.background}">
 				<div class="tiny-icon" style="grid-area: lock;"><IoIosLock></IoIosLock></div>
-				<div class="lighter" style="grid-area: url1; justify-self: right;">https://</div>
-				<div class="darker" style="grid-area: url2;">carrd.kaytea.dev</div>
+				<div class="url-wrapper">
+					<div class="lighter">https://</div>
+					<div class="darker">carrd.kaytea.dev</div>
+				</div>
 				<div class="tiny-icon" style="grid-area: star; justify-self: center;"><IoIosStar></IoIosStar></div>
 			</div>
 		</div>
@@ -43,19 +45,22 @@
 		<img src={banner} alt="" />
 	</div>
 	<div id="navi">
-		<button class="btn" on:click={() => {throw redirect(308, "/");}} style="background-color: {colors.container};">
+		<a 
+			class="btn"
+			href="/"
+			style="background-color: {colors.container};">
 			Home
-		</button>
-		<button class="btn" on:click={() => {throw redirect(308, "/about")}} style="background-color: {colors.container};">
+		</a>
+		<a class="btn" href="/about" style="background-color: {colors.container};">
 			About
-		</button>
+		</a>
 	</div>
 	<div id="content">
 		<div style="font-size: 14pt;"><b style="font-style: italic;">Kanwi</b> (Kathy)</div>
 		<div style="text-align: center; font-size: 11pt; display: grid;">
 			<p class="inline">She / They | 19 |
-			<span class="trans">MtF</span> 
-			<span class="lesbian">Lesbian</span>
+			<span class="trans"><b>MtF</b></span> 
+			<span class="lesbian"><b>Lesbian</b></span>
 			 | Cancer | ES/EN</p>
 		</div>
 
@@ -71,14 +76,6 @@
 	<div id="picture">
 		<img src={picture} alt=""/>
 	</div>
-	<div id="song">
-		<div class="out">
-			<div class="in"></div>
-			<div class="play-icon"><FaPlay></FaPlay></div>
-			<div class="song-title">Cinammon Girl - Lana del Rey</div>
-			<div class="duration">1:53 : <b>5:00</b></div>
-		</div>
-	</div>
 </div>
 
 <style lang="scss">
@@ -89,18 +86,51 @@
 	$default: #303030;
 	$defaultlight: #606060;
 
+	@media screen and (max-width: 450px) {
+		#Main {
+			max-width: 60vw;
+			min-width: 60vw;
+			grid-template-areas: 
+				"tabs		tabs"
+				"toolbar	toolbar"
+				"banner		banner"
+				"nav		nav"
+				"content	content"
+				"picture	picture"
+		}
+
+		#tabs {
+			max-width: 70%;
+		}
+
+		#whitebar {
+			display: none;
+		}
+	}
+
+	@media screen and (min-width: 450px) {
+		#Main {
+			max-width: 30vw;
+			min-width: 30vw;
+			grid-template-areas: 
+				"tabs		tabs"
+				"toolbar	toolbar"
+				"banner		banner"
+				"nav		nav"
+				"content	picture"
+		}
+
+		#tabs {
+			max-width: 50%;
+		}
+
+		#whitebar {
+			display: grid;
+		}
+	}
+
 	#Main {
-		min-width: 30vw;
-		max-width: 30vw;
 		display: grid;
-		grid-template-areas: 
-			"tabs		tabs"
-			"toolbar	toolbar"
-			"banner		banner"
-			"nav		nav"
-			"content	picture"
-			"song		song"
-			"player		player";
 		grid-template-columns: 50% 50%;
 		row-gap: 0.25em;
 		column-gap: 0.25rem;
@@ -108,7 +138,6 @@
 
 	#tabs {
 		grid-area: tabs;
-		max-width: 50%;
 		align-self: left;
 		.title {
 			margin: 0px;
@@ -138,11 +167,10 @@
 			#whitebar {
 				border-radius: 2.5px;
 				max-height: $iconsize;
-				display: grid;
 				user-select: none;
 				align-items: center;
-				grid-template-areas: "lock url1 url2 star";
-				grid-template-columns: $tinyiconsize 15% auto $tinyiconsize;
+				grid-template-areas: "lock url star";
+				grid-template-columns: $tinyiconsize auto $tinyiconsize;
 				.tiny-icon {
 					display: grid;
 					place-items: center;
@@ -152,12 +180,26 @@
 				}
 				.darker {
 					color: $default;
+					grid-area: right;
+					justify-self: left;
 				}
 				.lighter {
 					color: $defaultlight;
+					grid-area: left;
+					justify-self: right;
 				}
 			}
 		}
+	}
+
+	.url-wrapper {
+		display: grid;
+		grid-area: url;
+		grid-template-areas: "left right";
+		grid-template-columns: auto auto;
+		justify-self: stretch;
+		width: inherit;
+		overflow: hidden;
 	}
 
 	#banner {
@@ -171,22 +213,42 @@
 		}
 	}
 
+	@keyframes hover {
+		from {
+			color: $default;
+		}
+
+		to {
+			color: $defaultlight;
+		}
+	}
+
 	#navi {
 		grid-area: nav;
 		display: grid;
 		grid-template-areas: "home about";
 		column-gap: 0.25rem;
 		.btn {
+			text-align: center;
 			padding: 0.25rem;
 			border: 0;
 			font-size: 14pt;
+			color: $default;
+			text-decoration: none;
+			&:hover {
+				cursor: pointer;
+				animation: 0.5s hover;
+				color: $defaultlight;
+			}
 		}
 	}
 
 	#content {
 		grid-area: content;
 		display: grid;
-		place-items: center;	
+		place-items: center;
+		width: 100%;
+		overflow: auto;
 	}
 
 	#picture {
@@ -229,52 +291,9 @@
 		place-items: center;
 		text-align: center;
 		padding: 4px 8px;
+		margin: 0.5em 0;
 		p {
 			margin: 4px 0;
 		}
 	}
-
-	#song {
-		grid-area: song;
-		margin-top: 0.5em;
-		.out {
-			display: grid;
-			grid-template-areas: "icon title empty time";
-			grid-template-columns: 10% 50% auto 15%;
-			align-items: center;
-			min-width: 100%;
-			max-width: 100%;
-			min-height: 100%;
-			max-height: 100%;
-			border: 1px;
-			border-color: rgb(200, 200, 200);
-			border-style: double;
-			position: relative;
-			.in {
-				position: absolute;
-				width: 38%;
-				min-height: inherit;
-				max-height: inherit;
-				background-color: rgb(200, 200, 200);
-				z-index: 0;
-			}
-			.play-icon {
-				grid-area: icon;
-				z-index: 2;
-				max-height: 17px;
-				max-width: 17px;
-				justify-self: center;
-			}
-			.song-title {
-				grid-area: title;
-				z-index: 2;
-				align-self: center;
-			}
-			.duration {
-				grid-area: time;
-				z-index: 2;
-			}
-		}
-	}
-
 </style>

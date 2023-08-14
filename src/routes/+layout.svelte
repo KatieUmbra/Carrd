@@ -1,6 +1,7 @@
 <script lang="ts">
 
 	import Main from "./main.svelte";
+	import Footer from "./footer.svelte";
 	import { colors } from "$lib/vars";
 
 </script>
@@ -12,6 +13,7 @@
 	<div id="main">
 		<Main></Main>
 		<slot></slot>
+		<Footer></Footer>
 	</div>
 </div>
 
