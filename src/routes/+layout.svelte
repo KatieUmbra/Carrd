@@ -41,6 +41,11 @@
 
 <style lang="scss">
 
+@font-face {
+	font-family: "Poppins";
+	src: local("../lib/static/Poppins-Regular.ttf") format("ttf")
+}
+
 :global(*) {
 	font-family: 'poppins';
 }
