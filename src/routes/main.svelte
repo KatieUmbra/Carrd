@@ -10,8 +10,6 @@
 	import IoIosSync from 'svelte-icons/io/IoIosSync.svelte'
 	import IoIosLock from 'svelte-icons/io/IoIosLock.svelte'
 	import IoIosStar from 'svelte-icons/io/IoIosStar.svelte'
-    import { redirect } from "@sveltejs/kit";
-	import FaPlay from 'svelte-icons/fa/FaPlay.svelte'
 
 </script>
 
@@ -56,8 +54,8 @@
 		</a>
 	</div>
 	<div id="content">
-		<div style="font-size: 14pt;"><b style="font-style: italic;">Kanwi</b> (Kathy)</div>
-		<div style="text-align: center; font-size: 11pt; display: grid;">
+		<div style="font-size: 11pt;"><b style="font-style: italic;">Kanwi</b> (Kathy)</div>
+		<div style="text-align: center; font-size: 9pt; display: grid;">
 			<p class="inline">She / They | 19 |
 			<span class="trans"><b>MtF</b></span> 
 			<span class="lesbian"><b>Lesbian</b></span>
@@ -88,15 +86,16 @@
 
 	@media screen and (max-width: 450px) {
 		#Main {
-			max-width: 60vw;
-			min-width: 60vw;
+			max-width: 70vw;
+			min-width: 70vw;
 			grid-template-areas: 
 				"tabs		tabs"
 				"toolbar	toolbar"
 				"banner		banner"
 				"nav		nav"
 				"content	content"
-				"picture	picture"
+				"picture	picture";
+			grid-template-rows: auto auto 7.5vh auto auto auto;
 		}
 
 		#tabs {
@@ -110,14 +109,15 @@
 
 	@media screen and (min-width: 450px) {
 		#Main {
-			max-width: 30vw;
-			min-width: 30vw;
+			max-width: 25vw;
+			min-width: 25vw;
 			grid-template-areas: 
 				"tabs		tabs"
 				"toolbar	toolbar"
 				"banner		banner"
 				"nav		nav"
-				"content	picture"
+				"content	picture";
+			grid-template-rows: auto auto 7.5vh auto auto;
 		}
 
 		#tabs {
@@ -131,9 +131,9 @@
 
 	#Main {
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 49% 49%;
 		row-gap: 0.25em;
-		column-gap: 0.25rem;
+		column-gap: 2%;
 	}
 
 	#tabs {
@@ -208,8 +208,14 @@
 		min-width: 100%;
 		overflow: hidden;
 		img {
-			margin-top: -180px;
+			margin-top: -60px;
 			max-width: 100%;
+		}
+	}
+
+	@media screen and (min-width: 450px) {
+		#banner img {
+			margin-top: -150px;
 		}
 	}
 
@@ -230,9 +236,9 @@
 		column-gap: 0.25rem;
 		.btn {
 			text-align: center;
-			padding: 0.25rem;
+			padding: 0.125rem;
 			border: 0;
-			font-size: 14pt;
+			font-size: 11pt;
 			color: $default;
 			text-decoration: none;
 			&:hover {
@@ -293,6 +299,7 @@
 		padding: 4px 8px;
 		margin: 0.5em 0;
 		p {
+			font-size: 10pt;
 			margin: 4px 0;
 		}
 	}

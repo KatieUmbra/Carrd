@@ -29,8 +29,8 @@
 <style lang="scss">
 	@media screen and (max-width: 450px) {
 		#Main {
-			max-width: 60vw;
-			min-width: 60vw;
+			max-width: 70vw;
+			min-width: 70vw;
 			grid-template-areas: 
 				"song		song"
 				"player		player";
@@ -39,8 +39,8 @@
 
 	@media screen and (min-width: 450px) {
 		#Main {
-			max-width: 30vw;
-			min-width: 30vw;
+			max-width: 25vw;
+			min-width: 25vw;
 			grid-template-areas: 
 				"song		song"
 				"player		player";
@@ -49,9 +49,9 @@
 
 	#Main {
 		display: grid;
-		grid-template-columns: 50% 50%;
+		grid-template-columns: 49% 49%;
 		row-gap: 0.25em;
-		column-gap: 0.25rem;
+		column-gap: 2%;
 	}
 
 	#song {
@@ -60,7 +60,7 @@
 		.out {
 			display: grid;
 			grid-template-areas: "icon title empty time";
-			grid-template-columns: 10% 50% auto 25%;
+			grid-template-columns: 17px 50% auto 25%;
 			align-items: center;
 			min-width: 100%;
 			max-width: 100%;
@@ -81,8 +81,8 @@
 			.play-icon {
 				grid-area: icon;
 				z-index: 2;
-				max-height: 17px;
-				max-width: 17px;
+				max-height: 15px;
+				max-width: 15px;
 				justify-self: center;
 			}
 			.song-title {
@@ -90,11 +90,15 @@
 				z-index: 2;
 				align-self: center;
 				font-style: italic;
+				font-size: 10pt;
 			}
 			.duration {
 				grid-area: time;
 				justify-self: right;
 				z-index: 2;
+				padding-right: 0.5em;
+				font-style: italic;
+				font-size: 9pt;
 			}
 		}
 	}

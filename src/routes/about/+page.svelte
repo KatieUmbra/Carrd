@@ -5,7 +5,9 @@
 
 <div id="Main">
 	<div class="img1">
-		<img src={sunset} alt="Sunset GIF"/>
+		<div class="img-wrapper">
+			<img src={sunset} alt="Sunset GIF"/>
+		</div>
 	</div>
 	<div class="games-music">
 		<p class="title"><b>Games!</b></p>
@@ -16,7 +18,9 @@
 		<p><b>Bedroom pop</b>. pop. <b>weirdcore.</b> rock.</p>
 	</div>
 	<div class="img2">
-		<img src={sky} alt="Sunset"/>
+		<div class="img-wrapper">
+			<img src={sky} alt="Sunset"/>
+		</div>
 	</div>
 	<div class="hobbies-themes">
 		<p class="title"><b>Hobbies!</b></p>
@@ -31,36 +35,28 @@
 	$container: #cccccc;
 
 	#Main {
-		overflow: auto;
 		display: grid;
-		min-width: 30vw;
-		max-width: 30vw;
+		min-width: 25vw;
+		max-width: 25vw;
 		grid-template-areas: 
 		"img1 games-music games-music"
 		"hobbies-themes hobbies-themes img2";
+		grid-template-columns: 45% 10% 45%;
+		row-gap: 0.5em;
 		place-items: center;
-		gap: 1em;
 		.img1, .img2 {
-			padding: 0.1em;
+			width: 100%;
+			height: 100%;
 			grid-area: img1;
-			img {
-				border-radius: 10px;
-			}
+			display: grid;
+			align-items: center;
+			justify-items: center;
 		}
 		.img2 {
 			grid-area: img2;
-			img {
-				max-width: 15vw;
-			}
 		}
 
 		@media screen and (max-width: 450px) {
-			.img2, .img1 {
-				img {
-					max-width: 60vw;
-				}
-			}
-
 			.img1 {
 				margin-top: 1em;
 			}
@@ -72,7 +68,7 @@
 			padding: 0.25em 0.5em;
 			p {
 				margin: 0;
-				font-size: 10pt;
+				font-size: 8pt;
 				text-align: justify;
 			}
 			.title {
@@ -85,18 +81,33 @@
 		}
 		.hobbies-themes {
 			grid-area: hobbies-themes;
+			max-width: 100%;
 		}
 	}
 
 	@media screen and (max-width: 450px) {
 		#Main {
-			min-width: 60vw;
-			max-width: 60vw;
+			min-width: 70vw;
+			max-width: 70vw;
 			grid-template-areas: 
 			"img1"
 			"games-music"
 			"img2"
 			"hobbies-themes";
+			grid-template-columns: 100%;
+			column-gap: 0;
+		}
+	}
+
+	.img-wrapper {
+		display: grid;
+		place-items: center;
+		width: 95%;
+		height: auto;
+		border-radius: 10px;
+		overflow: hidden;
+		img {
+			max-width: 150%;
 		}
 	}
 
