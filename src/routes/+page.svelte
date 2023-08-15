@@ -13,7 +13,7 @@
 		site_name: "Kanwi's Carrd",
 		images : [
 			{
-				url: "../lib/static/preview.png",
+				url: "https://files.catbox.moe/a86sxd.png",
 				width: 1200,
 				height: 627,
 				alt: "Preview of the website"
