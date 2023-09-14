@@ -1,5 +1,6 @@
 <script lang="ts">
 
+	import { MetaTags } from "svelte-meta-tags";
 	import Main from "./main.svelte";
 	import Footer from "./footer.svelte";
 	import Source from "./src.svelte";
@@ -19,10 +20,40 @@
 	let ready = false;
 	onMount(() => ready = true);
 
+	const description = "Kanwi's (Aka. Katherine) presentation carrd with useful links, likes, etc..."
+	const title = "Pretty Girl - Search"
+	const imgurl = "https://files.catbox.moe/a86sxd.png"
 </script>
 
 <link rel="stylesheet"
   href="https://fonts.googleapis.com/css?family=poppins">
+
+<MetaTags
+	title={title}
+	description={description}
+	openGraph={{
+		type: "website",
+		url: "https://carrd.kaytea.dev",
+		title: title,
+		description: title,
+		site_name: "Kanwi's Carrd",
+		images : [
+			{
+				url: imgurl,
+				width: 1200,
+				height: 627,
+				alt: "Preview of the website"
+			}
+		]
+	}}
+/>
+
+<svelte:head>
+	<title>Pretty Girl - Search</title>
+	<meta name="description" content="Kanwi's (Aka. Katherine) presentation carrd with useful links, likes, etc..."/>
+	<meta name="author" content="Katherine C."/>
+	<meta name="og:image" content={imgurl}/>
+</svelte:head>
 
 <div id="page" style="background-color: {colors.background}">
 {#if ready}
