@@ -49,7 +49,7 @@
 }
 
 :global(*) {
-	font-family: 'poppins';
+	font-family: 'Poppins', sans-serif;
 }
 
 #page {
