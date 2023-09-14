@@ -35,7 +35,7 @@
 		type: "website",
 		url: "https://carrd.kaytea.dev",
 		title: title,
-		description: title,
+		description: description,
 		site_name: "Kanwi's Carrd",
 		images : [
 			{
