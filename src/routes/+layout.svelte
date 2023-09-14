@@ -2,6 +2,7 @@
 
 	import Main from "./main.svelte";
 	import Footer from "./footer.svelte";
+	import Source from "./src.svelte";
 	import { colors } from "$lib/vars";
     import { fade, slide } from "svelte/transition";
     import type { LayoutData } from "./$types";
@@ -36,6 +37,7 @@
 		{/key}
 		<Footer></Footer>
 	</div>
+	<Source></Source>
 {/if}
 </div>
 
