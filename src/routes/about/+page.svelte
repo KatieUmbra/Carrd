@@ -11,9 +11,9 @@
 	</div>
 	<div class="games-music">
 		<p class="title"><b>Games!</b></p>
-		<p class="bm">valorant. <b>Minecraft</b>. geometry dash. roblox. <b>VrChat.</b></p>
+		<p class="bm">CS2. <b>Minecraft</b>. Roblox. <b>VrChat.</b></p>
 		<p class="title"><b>Aesthetics!</b></p>
-		<p class="bm"><b>weirdcore</b>. vaporwave. outrun. traumacore. dreamcore. <b>grunge</b>. dark academia. <b>angelcore</b>. kidcore</p>
+		<p class="bm"><b>weirdcore</b>. vaporwave. traumacore*. dreamcore. <b>grunge</b>. dark academia. <b>angelcore</b>. kidcore</p>. <b>yume kawaii</b>. gurokawaii.
 		<p class="title"><b>Music</b></p>
 		<p><b>Bedroom pop</b>. pop. <b>weirdcore.</b> rock.</p>
 	</div>
