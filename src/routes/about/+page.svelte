@@ -13,9 +13,9 @@
 		<p class="title"><b>Games!</b></p>
 		<p class="bm">CS2. <b>Minecraft</b>. Roblox. <b>VrChat.</b></p>
 		<p class="title"><b>Aesthetics!</b></p>
-		<p class="bm"><b>weirdcore</b>. vaporwave. traumacore*. dreamcore. <b>grunge</b>. dark academia. <b>angelcore</b>. kidcore</p>. <b>yume kawaii</b>. gurokawaii.
+		<p class="bm"><b>weirdcore</b>. vaporwave. traumacore*. dreamcore. <b>grunge</b>. dark academia. <b>angelcore</b>. kidcore. <b>yume kawaii</b>. gurokawaii.</p>
 		<p class="title"><b>Music</b></p>
-		<p><b>Bedroom pop</b>. pop. <b>weirdcore.</b> rock.</p>
+		<p><b>Bedroom pop</b>. pop. <b>weirdcore.</b></p>
 	</div>
 	<div class="img2">
 		<div class="img-wrapper">
@@ -24,7 +24,7 @@
 	</div>
 	<div class="hobbies-themes">
 		<p class="title"><b>Hobbies!</b></p>
-		<p class="bm">piano. coding. <b>gamedev</b>. <b>sysdev</b>. Jvm dev. videogames. <b>writing</b>. singing. graphic design.</p>
+		<p class="bm">piano. <b>guitar</b> coding. <b>gamedev</b>. <b>sysdev</b>. jvm dev. videogames. <b>writing</b>. singing. graphic design.</p>
 		<p class="title"><b>Themes!</b></p>
 		<p><b>Liminal Spaces</b>. the backrooms. true crime. <b>Horror</b>. sci-fi. <b>Math</b>. music composing. <b>Cyberpunk Anime</b>.</p>
 	</div>
