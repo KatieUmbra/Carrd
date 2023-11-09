@@ -9,8 +9,8 @@
 			<div class="out">
 			<div class="in"></div>
 			<div class="play-icon"><FaPlay></FaPlay></div>
-			<div class="song-title">Cinammon Girl - Lana del Rey</div>
-			<div class="duration">1:53 : <b>5:00</b></div>
+			<div class="song-title">Apocalypse - Cigarretes After Sex</div>
+			<div class="duration">0:32 : <b>4:50</b></div>
 		</div>
 	</div>
 	<div id="player">
@@ -18,7 +18,7 @@
 			href="https://open.spotify.com/track/7CFfqRW50ffULvBv7lfIIg?si=66e33a4e886d409b"
 			target="_blank"><FaArrowLeft></FaArrowLeft></a></div>
 		<div style="grid-area: center; justify-self: center;"><a 
-			href="https://open.spotify.com/track/2mdEsXPu8ZmkHRRtAdC09e?si=f722125c3ef941c1" 
+			href="https://open.spotify.com/track/0yc6Gst2xkRu0eMLeRMGCX?si=a10046f906904a00" 
 			target="_blank"><FaPlay></FaPlay></a></div>
 		<div style="grid-area: right; justify-self: left;"><a 
 			href="https://open.spotify.com/track/7s8VgA8OjvwBUuigKzEGBx?si=d50906dce2f949d1"
