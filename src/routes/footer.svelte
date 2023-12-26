@@ -10,7 +10,7 @@
 			<div class="in"></div>
 			<div class="play-icon"><FaPlay></FaPlay></div>
 			<div class="song-title">Apocalypse - Cigarretes After Sex</div>
-			<div class="duration">0:32 : <b>4:50</b></div>
+			<div class="duration">0:32 - <b>4:50</b></div>
 		</div>
 	</div>
 	<div id="player">
@@ -72,7 +72,7 @@
 			position: relative;
 			.in {
 				position: absolute;
-				width: 38%;
+				width: 11%;
 				min-height: inherit;
 				max-height: inherit;
 				background-color: rgb(200, 200, 200);
