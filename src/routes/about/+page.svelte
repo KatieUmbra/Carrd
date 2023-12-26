@@ -3,10 +3,15 @@
 	import sky from "$lib/static/sky.jpg"
 </script>
 
+<svelte:head>
+	<link rel="preload" as="image" href={sunset} />
+	<link rel="preload" as="image" href={sky} />
+</svelte:head>
+
 <div id="Main">
 	<div class="img1">
 		<div class="img-wrapper">
-			<img src={sunset} alt="Sunset GIF"/>
+			<img src={sunset} alt="Sunset GIF" data-sveltekit-preload-data/>
 		</div>
 	</div>
 	<div class="games-music">
@@ -19,7 +24,7 @@
 	</div>
 	<div class="img2">
 		<div class="img-wrapper">
-			<img src={sky} alt="Sunset"/>
+			<img src={sky} alt="Sunset" data-sveltekit-preload-data/>
 		</div>
 	</div>
 	<div class="hobbies-themes">
