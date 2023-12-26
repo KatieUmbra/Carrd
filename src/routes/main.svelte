@@ -17,6 +17,8 @@
 <svelte:head>
 	<link rel="preload" as="image" href={sunset} />
 	<link rel="preload" as="image" href={sky} />
+	<link rel="preload" as="image" href={banner} />
+	<link rel="preload" as="image" href={picture} />
 </svelte:head>
 
 <div id="Main">
