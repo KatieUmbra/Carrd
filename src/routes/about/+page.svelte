@@ -11,7 +11,11 @@
 <div id="Main">
 	<div class="img1">
 		<div class="img-wrapper">
-			<img src={sunset} alt="Sunset GIF" data-sveltekit-preload-data/>
+			<img
+				loading="lazy"
+				src={sunset}
+				alt="Sunset GIF"
+				data-sveltekit-preload-data/>
 		</div>
 	</div>
 	<div class="games-music">

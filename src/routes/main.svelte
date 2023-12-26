@@ -10,8 +10,14 @@
 	import IoIosSync from 'svelte-icons/io/IoIosSync.svelte'
 	import IoIosLock from 'svelte-icons/io/IoIosLock.svelte'
 	import IoIosStar from 'svelte-icons/io/IoIosStar.svelte'
-
+	import sunset from "$lib/static/sunset.gif"
+	import sky from "$lib/static/sky.jpg"
 </script>
+
+<svelte:head>
+	<link rel="preload" as="image" href={sunset} />
+	<link rel="preload" as="image" href={sky} />
+</svelte:head>
 
 <div id="Main">
 	<div id="tabs">
