@@ -31,7 +31,7 @@
 
 	#main {
 		display: grid;
-		grid-template: "discord reddit roblox spotify pronouns github";
+		grid-template: "discord roblox spotify pronouns github";
 		column-gap: 0.5em;
 	}
 
