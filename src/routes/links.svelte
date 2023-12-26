@@ -11,9 +11,6 @@
 	<a href="https://discordapp.com/users/883348946708221952" target="_blank" style="grid-area: discord;">
 		<div class="icon"><FaDiscord></FaDiscord></div>
 	</a>
-	<a href="https://reddit.com/u/kanwitetsu" target="_blank" style="grid-area: reddit;">
-		<div class="icon"><FaRedditAlien></FaRedditAlien></div>
-	</a>
 	<a href="https://www.roblox.com/users/190949460/profile" target="_blank" style="grid-area: roblox;">
 		<img class="svg" src={roblox} alt="icon by https://icons8.com"/>
 	</a>
