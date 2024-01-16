@@ -280,17 +280,25 @@
 
 	.lesbian {
 		display: inline;
-		background: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(180, 180, 180), rgb(210, 127, 164), rgb(162, 2, 98));
+		background: linear-gradient(to right, rgb(213, 44, 0), rgb(226, 150, 136), rgb(255, 255, 255), rgb(210, 127, 164), rgb(162, 2, 98));
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+		text-shadow:   -1px  1px 0 #000,
+				  		1px  1px 0 #000,
+				 		1px -1px 0 #000,
+					   -1px -1px 0 #000;
 	}
 
 	.trans {
-		background: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(180, 180, 180), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
+		background: linear-gradient(to right, rgb(85, 205, 252), rgb(179, 157, 233), rgb(247, 168, 184), rgb(255, 255, 255), rgb(247, 168, 184), rgb(179, 157, 233), rgb(85, 205, 252));
 		-webkit-background-clip: text;
 		background-clip: text;
 		-webkit-text-fill-color: transparent;
+		text-shadow:   -1px  1px 0 #000,
+				  		1px  1px 0 #000,
+				 		1px -1px 0 #000,
+					   -1px -1px 0 #000;
 	}
 
 	.inline {
