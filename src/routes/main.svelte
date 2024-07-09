@@ -64,7 +64,7 @@
 	<div id="content">
 		<div style="font-size: 11pt;"><b style="font-style: italic;">Kanwi</b> (Kathy)</div>
 		<div style="text-align: center; font-size: 9pt; display: grid;">
-			<p class="inline">She / They | 19 |
+			<p class="inline">She / They | 20 |
 			<span class="trans"><b>MtF</b></span> 
 			<span class="lesbian"><b>Lesbian</b></span>
 			 | Cancer | ES/EN</p>
