@@ -20,7 +20,7 @@
 	</div>
 	<div class="games-music">
 		<p class="title"><b>Games!</b></p>
-		<p class="bm">CS2. <b>Minecraft</b>. Roblox. <b>VrChat.</b></p>
+		<p class="bm">CS2. <b>Minecraft</b>. Roblox. <b>VrChat.</b> Needy Streamer Overload. Webfishing. Geometry Dash. Valorant.</p>
 		<p class="title"><b>Aesthetics!</b></p>
 		<p class="bm"><b>weirdcore</b>. vaporwave. traumacore*. dreamcore. <b>grunge</b>. dark academia. <b>angelcore</b>. kidcore. <b>yume kawaii</b>. gurokawaii.</p>
 		<p class="title"><b>Music</b></p>
