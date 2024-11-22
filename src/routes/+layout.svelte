@@ -26,7 +26,8 @@
 </script>
 
 <link rel="stylesheet"
-  href="https://fonts.googleapis.com/css?family=poppins">
+  href="https://fonts.googleapis.com/css?family=Poppins">
+
 
 <MetaTags
 	title={title}
@@ -49,6 +50,7 @@
 />
 
 <svelte:head>
+    <link rel="icon" href="%svelte.assets%/favicon.ico"/>
 	<title>Pretty Girl - Search</title>
 	<meta name="description" content="Kanwi's (Aka. Katherine) presentation carrd with useful links, likes, etc..."/>
 	<meta name="author" content="Katherine C."/>

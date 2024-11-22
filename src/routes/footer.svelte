@@ -9,8 +9,8 @@
 			<div class="out">
 			<div class="in"></div>
 			<div class="play-icon"><FaPlay></FaPlay></div>
-			<div class="song-title">Apocalypse - Cigarretes After Sex</div>
-			<div class="duration">0:32 - <b>4:50</b></div>
+			<div class="song-title">Pretty When You Cry - Lana Del Rey</div>
+			<div class="duration">2:55 - <b>3:54</b></div>
 		</div>
 	</div>
 	<div id="player">
@@ -18,7 +18,7 @@
 			href="https://open.spotify.com/track/7CFfqRW50ffULvBv7lfIIg?si=66e33a4e886d409b"
 			target="_blank"><FaArrowLeft></FaArrowLeft></a></div>
 		<div style="grid-area: center; justify-self: center;"><a 
-			href="https://open.spotify.com/track/0yc6Gst2xkRu0eMLeRMGCX?si=a10046f906904a00" 
+			href="https://open.spotify.com/track/6PnluwP0fjGnpIBsqTdUTq" 
 			target="_blank"><FaPlay></FaPlay></a></div>
 		<div style="grid-area: right; justify-self: left;"><a 
 			href="https://open.spotify.com/track/7s8VgA8OjvwBUuigKzEGBx?si=d50906dce2f949d1"
@@ -72,7 +72,7 @@
 			position: relative;
 			.in {
 				position: absolute;
-				width: 11%;
+				width: 74%;
 				min-height: inherit;
 				max-height: inherit;
 				background-color: rgb(200, 200, 200);

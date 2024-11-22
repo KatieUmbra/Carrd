@@ -12,6 +12,36 @@
 	import IoIosStar from 'svelte-icons/io/IoIosStar.svelte'
 	import sunset from "$lib/static/sunset.gif"
 	import sky from "$lib/static/sky.jpg"
+    import music from "$lib/static/music.mp3"
+    import flowers from "$lib/static/flowers.jpg";
+    import cloud from "$lib/static/cloud.jpg";
+    import Particles, { particlesInit } from "@tsparticles/svelte";
+
+    const audio = new Audio(music);
+    let particlesConfig = {
+        particles: {
+            color: {
+                value: '#000'
+            },
+            links: {
+                enable: true,
+                color: "#000"
+            },
+            move: {
+                enable: true
+            },
+            number: {
+                value: 100
+            }
+        }
+    };
+    let onParticlesLoaded = (event: any) => {
+        const particlesContainer = event.details.particles;
+    }
+    void particlesInit(async (engine) => {
+    })
+    audio.pause();
+    audio.play();
 </script>
 
 <svelte:head>
@@ -19,9 +49,16 @@
 	<link rel="preload" as="image" href={sky} />
 	<link rel="preload" as="image" href={banner} />
 	<link rel="preload" as="image" href={picture} />
+    <link rel="preload" as="image" href={flowers}/>
+    <link rel="preload" as="image" href={cloud}/>
 </svelte:head>
 
 <div id="Main">
+    <Particles
+        id="tsparticles"
+        options="{particlesConfig}"
+        on:onParticlesLoaded="{onParticlesLoaded}"
+    />
 	<div id="tabs">
 		<p 
 			class="title" 
@@ -55,11 +92,14 @@
 			class="btn"
 			href="/"
 			style="background-color: {colors.container};">
-			Home
+            Home
 		</a>
 		<a class="btn" href="/about" style="background-color: {colors.container};">
 			About
 		</a>
+        <a class="btn" href="/criteria" style="background-color: {colors.container};">
+            Criteria
+        </a>
 	</div>
 	<div id="content">
 		<div style="font-size: 11pt;"><b style="font-style: italic;">Kanwi</b> (Kathy)</div>
@@ -240,7 +280,7 @@
 	#navi {
 		grid-area: nav;
 		display: grid;
-		grid-template-areas: "home about";
+		grid-template-areas: "home about criteria";
 		column-gap: 0.25rem;
 		.btn {
 			text-align: center;
