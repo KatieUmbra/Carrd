@@ -1,13 +1,13 @@
 <script lang="ts">
 import FaGithub from "svelte-icons/fa/FaGithub.svelte"
-let shown = false;
+let shown = $state(false);
 const showHover = () => {shown = true};
 const hideHover = () => {shown = false};
 </script>
 
 <div id="main">
 	<a href="https://github.com/KatieUmbra/Carrd" target="_blank" style="grid-area: left;">
-		<div class="icon" on:mouseenter={showHover} on:mouseleave={hideHover}>
+		<div class="icon" onmouseenter={showHover} onmouseleave={hideHover}>
 			<FaGithub></FaGithub>
 		</div>
 	</a>
