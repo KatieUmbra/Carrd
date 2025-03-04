@@ -13,7 +13,7 @@
 		"@sveltejs/adapter-auto": "^3.0.0",
 		"@sveltejs/kit": "^2.5.27",
 		"@sveltejs/vite-plugin-svelte": "^4.0.0",
-		"prettier": "3.3.3",
+		"prettier": "^3.5.3",
 		"sass": "^1.65.1",
 		"svelte": "^5.0.0",
 		"svelte-check": "^4.0.0",
@@ -26,6 +26,8 @@
 	"type": "module",
 	"dependencies": {
 		"@tsparticles/svelte": "^3.1.1",
-		"svelte-icons": "^2.1.0"
+		"bootstrap-icons": "^1.11.3",
+		"prettier-plugin-svelte": "^3.3.3",
+		"prettier-plugin-tailwindcss": "^0.6.11"
 	}
 }
