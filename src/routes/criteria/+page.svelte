@@ -11,7 +11,7 @@
 <div id="Main">
     <div class="byf">
         <p class="title"><b>Byf!</b></p>
-        <p class="bm"><b>I'm 20, latina, trans/lesbian.</b> anarchist, I have bpd/madd/ocd. Might talk about dark themes and trauma (sh/ed). <b>Neither anti nor pro shipping.</b> might retweet suggestive or light nsfw. <b>I speak spanish and english.</b> I block easily.</p>
+        <p class="bm"><b>I'm 20, latina, trans/lesbian.</b> anarchist, pro-kink, I have bpd/madd/ocd. Might talk about dark themes and trauma (sh/ed). <b>Neither anti nor pro shipping.</b> might retweet suggestive or light nsfw. <b>I speak spanish and english.</b> I block easily.</p>
     </div>
     <div class="img1">
         <div class="img-wrapper">
@@ -25,7 +25,7 @@
     </div>
     <div class="dni">
         <p class="title"><b>Dni!</b></p>
-        <p class="bm"><b>Basic dni. minors. terf, tirf, radfem.</b> zionist. <b>misandry.</b> proship, hardcore antiship. <b>4chan users. lolicon, zoo.</b> jirai kei. <b>uses the t-slur without tw.</b> marxist-leninists, <b>conservatives,</b> liberals. edsky/shsky</p>
+        <p class="bm"><b>Basic dni. minors. terf, tirf, radfem.</b> zionist. <b>misandry.</b> shipping discourse enthusiasts. <b>4chan users. lolicon, zoo.</b> jirai kei. <b>uses the t-slur without tw.</b> marxist-leninists, <b>conservatives,</b> ed/sh</p>
     </div>
 </div>
 

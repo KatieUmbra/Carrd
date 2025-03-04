@@ -113,10 +113,10 @@
 		<Links></Links>
 
 		<div class="outline">
-			<p>（＾▽＾）<b>weirdcore</b>. <b>Lain</b>. Internet aesthetics. <b>Dark themes</b>. Minecraft. <b>traumacore</b></p>
+			<p>（＾▽＾）<b>weirdcore</b>. <b>Evangelion</b>. <b>Lain</b>. Internet aesthetics. <b>Dark themes</b>. Minecraft. <b>traumacore</b></p>
 		</div>
 		<div class="outline">
-			<p>（ T ^ T ）gore. <b>bigotry</b>. conflict. hatred. <b>drama</b></p>
+			<p>（ T ^ T ）gore. <b>bigotry</b>. conflict. hatred. <b>drama</b>. discourse.</p>
 		</div>
 	</div>
 	<div id="picture">
