@@ -1,7 +1,4 @@
 <script lang="ts">
-    import FaPlay from "svelte-icons/fa/FaPlay.svelte";
-    import FaArrowRight from "svelte-icons/fa/FaArrowRight.svelte";
-    import FaArrowLeft from "svelte-icons/fa/FaArrowLeft.svelte";
 </script>
 
 <div id="Main">

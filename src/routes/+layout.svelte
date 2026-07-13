@@ -1,7 +1,6 @@
 <!-- @migration-task Error while migrating Svelte code: migrating this component would require adding a `$props` rune but there's already a variable named props.
      Rename the variable and try again or migrate by hand. -->
 <script lang="ts">
-    import { MetaTags } from "svelte-meta-tags";
     import Main from "./main.svelte";
     import Footer from "./footer.svelte";
     import Source from "./src.svelte";
@@ -29,6 +28,7 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
 
+<!--
 <MetaTags
     {title}
     {description}
@@ -47,9 +47,12 @@
             },
         ],
     }} />
+-->
 
 <svelte:head>
+    <!--
     <link rel="icon" href="%svelte.assets%/favicon.ico" />
+    -->
     <title>Pretty Girl - Search</title>
     <meta
         name="description"
